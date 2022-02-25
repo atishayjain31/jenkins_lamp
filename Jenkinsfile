@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('copy to lamp stack server') {
       steps{
-              sh 'sudo scp index.html ubuntu@35.171.153.38:/var/www/html/index.html'
+              sh 'scp index.html root@35.171.153.38:/var/www/html/index.html'
            }
         }
     }
